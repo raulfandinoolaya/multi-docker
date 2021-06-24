@@ -18,6 +18,6 @@ after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin  
   # Take those images and push them to docker hub
   - docker push calcas0731/multi-client
-  - docker push calcas0731/multi-ngnix
+  - docker push calcas0731/multi-nginx
   - docker push calcas0731/multi-api
   - docker push calcas0731/multi-worker
