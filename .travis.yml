@@ -11,7 +11,7 @@ script:
 
 after_success:
   - docker build -t calcas0731/multi-client ./client
-  - docker build -t calcas0731/multi-ngnix ./ngnix
+  - docker build -t calcas0731/multi-nginx ./nginx
   - docker build -t calcas0731/multi-api ./api
   - docker build -t calcas0731/multi-worker ./worker
   # Log in to the docker CLI
